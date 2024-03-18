@@ -94,3 +94,49 @@ To exit the virtual environment when you're done working on the project:
 ```bash
 deactivate
 ```
+
+### TESTS
+
+GET Menu
+http://localhost:8000/menu/1
+
+```json
+{
+  "id": 1,
+  "title": "Greek Salad",
+  "price": "12.00",
+  "inventory": 100
+}
+```
+
+GET Menus
+http://localhost:8000/menu/
+
+```json
+[
+  {
+    "id": 1,
+    "title": "Greek Salad",
+    "price": "12.00",
+    "inventory": 100
+  },
+  {
+    "id": 2,
+    "title": "Grilled Fish",
+    "price": "9.00",
+    "inventory": 50
+  },
+  {
+    "id": 3,
+    "title": "Bruschetta",
+    "price": "11.00",
+    "inventory": 100
+  },
+  {
+    "id": 4,
+    "title": "Lemon Desert",
+    "price": "7.00",
+    "inventory": 50
+  }
+]
+```
