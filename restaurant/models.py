@@ -1,18 +1,5 @@
 from django.db import models
 from django.utils import timezone
-# Create your models here.
-class Booking(models.Model):
-    name = models.CharField(max_length=255, default='')
-    number_of_guests = models.IntegerField(default=6)
-    booking_date =models.DateTimeField(default=timezone.now)
-
-    class Meta:
-        verbose_name = 'Booking'
-        verbose_name_plural = 'Booking Records'
-
-    def __str__(self) -> str:
-        return f'{self.name} for {self.number_of_guests} guests on {self.booking_date}'
-
 
 # Add code to create Menu model
 class Menu(models.Model):
@@ -26,3 +13,16 @@ class Menu(models.Model):
 
     def __str__(self) -> str:
         return f'{self.title} : {str(self.price)}'
+    
+# Add code to create Booking model
+class Booking(models.Model):
+    name = models.CharField(max_length=255, default='')
+    number_of_guests = models.IntegerField(default=6)
+    booking_date =models.DateTimeField(default=timezone.now)
+
+    class Meta:
+        verbose_name = 'Booking'
+        verbose_name_plural = 'Booking Records'
+
+    def __str__(self) -> str:
+        return f'{self.name} for {self.number_of_guests} guests on {self.booking_date}'
