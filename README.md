@@ -106,7 +106,7 @@ Ensure your development server is running and test the following endpoints with 
 
 ### GET Menu Item
 
-- URL: http://localhost:8000/menu/1
+- URL: http://localhost:8000/api/menu/1
 
 _Header_:
 
@@ -125,7 +125,7 @@ _Response_:
 
 ### GET All Menu Items
 
-- URL: http://localhost:8000/menu/
+- URL: http://localhost:8000/api/menu/
 
 _Header_:
 
@@ -164,7 +164,7 @@ _Response_:
 
 ### GET Booking
 
-- URL: http://localhost:8000/booking/tables/
+- URL: http://localhost:8000/api/booking/tables/
 
 _Header_:
 
