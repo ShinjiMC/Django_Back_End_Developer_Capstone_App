@@ -140,3 +140,25 @@ http://localhost:8000/menu/
   }
 ]
 ```
+
+GET Booking
+http://localhost:8000/booking/tables/
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Braulio Maldonado",
+    "number_of_guests": 4,
+    "booking_date": "2024-03-18T10:00:00Z"
+  }
+]
+```
+
+http://localhost:8000/auth/token/login/ to get the token
+user: "super"
+password: "123"
+
+{
+"auth_token": "3645695bc710ae5f9bf6a604fe9ef1f8533882b6"
+}
